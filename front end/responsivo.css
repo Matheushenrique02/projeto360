@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  #title2 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.301);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #conteiner {
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .content1,
+  .content2 {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #formulario {
+    width: 100%;
+    padding: 0;
+  }
+
+  #botoes {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  label {
+    text-align: left;
+    padding-left: 4px;
+  }
+
+  #fotoPreview {
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+  }
+
+  #selecione {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-height: 80vh;
+    padding: 20px;
+  }
+
+  .usuario-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .usuario-item button {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 400px) {
+  #fotoPreview {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fechar {
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+}

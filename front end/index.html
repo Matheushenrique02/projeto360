@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsivo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h1 id="title2">
+    <span class="material-symbols-outlined">account_circle</span>
+    Create Account
+  </h1>
+
+  <div id="conteiner">
+    <div class="content1">
+      <form id="formulario" action="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" pattern="[A-Za-zÀ-ÿ\s]{5,}" title="Digite pelo menos 5 letras" required />
+        <label for="idade">Idade:</label>
+        <input id="idade" type="number" min="1" max="99" required />
+        <label for="endereçoRua">Rua:</label>
+        <input id="endereçoRua" type="text" pattern="[A-Za-zÀ-ÿ\s]{5,}" title="Digite pelo menos 5 letras" required />
+        <label for="endereçoBairro">Bairro:</label>
+        <input id="endereçoBairro" type="text" pattern="[A-Za-zÀ-ÿ\s]{5,}" title="Digite pelo menos 5 letras" required />
+        <label for="endereçoEstado">Estado:</label>
+        <input id="endereçoEstado" type="text" pattern="[A-Za-zÀ-ÿ\s]{4,}" title="Digite pelo menos 5 letras" required />
+        <label for="biografia">Biografia:</label>
+        <textarea id="biografia" rows="10" required></textarea>
+
+        <div id="botoes">
+          <button type="submit" id="salvar">Salvar</button>
+          <button type="button" id="btnEditarPerfil">Editar Perfil</button>
+        </div>
+      </form>
+
+      <!-- Modal para lista de usuários -->
+      <div id="modalPerfis" class="modal" style="display:none;">
+        <div class="modal-content">
+          <h3>Perfis disponíveis</h3>
+          <div id="listaUsuarios"></div>
+          <button id="btnFecharModal" class="fechar">X</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content2">
+      <h1 id="title">
+        <span class="material-symbols-outlined">account_circle</span>
+        Create Account
+      </h1>
+
+      <img
+        id="fotoPreview"
+        src="https://static.vecteezy.com/ti/vetor-gratis/p1/13360247-de-icone-de-foto-avatar-padrao-simbolo-de-sinal-de-perfil-de-midia-social-vetor.jpg"
+        alt="Foto de perfil"
+      />
+      <input type="file" id="fotoInput" accept="image/*" />
+      <label for="fotoInput" id="selecione">Selecionar foto</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

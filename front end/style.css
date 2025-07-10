@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://oceanicaalimentos.com.br/wp-content/uploads/2020/01/FUNDO.png');
+}
+
+#title{
+    background-color: rgba(128, 128, 128, 0.301);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#title2{
+    display:none
+}
+
+#conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 600px;
+    background-color:  #e0e0e0 ;
+    border-radius: 20px;
+}
+
+#fotoPreview{
+    height: 150px;
+    width: 150px;
+}
+
+#fotoInput{
+    display: none;
+}
+
+#selecione{
+    border: none;
+    cursor:pointer;
+    padding: 10px;
+    background-color: rgb(1, 1, 99);
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+#selecione:hover{
+    background-color:#092b9b;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    
+    
+
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    padding:5px;
+}
+
+.content2{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    width: 220px;
+}
+
+button{
+    border: none;
+    cursor:pointer;
+    padding: 10px;
+    background-color: rgb(1, 1, 99);
+    color: white;
+    width: 100px;
+}
+
+#editar:hover,#salvar:hover{
+    background-color:#092b9b;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+input,label{
+    height: 30px;
+    text-align: center;
+}
+
+input{
+    margin: 2px;
+}
+
+#biografia{
+    padding: 5px;
+    width: 100%;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lista de usuários */
+#listaUsuarios {
+  margin-top: 20px;
+}
+
+.usuario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.usuario-item:hover {
+  background-color: #ddd;
+}
+
+.usuario-item button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.usuario-item button:hover {
+  background-color: #c0392b;
+}
+
